@@ -10,14 +10,143 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
-
+    
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
 
     <title>Checkout</title>
 
   </head>
   <body>
+    <main class="main">
+      <header> <h1 class="checkout">Checkout</h1> </header>
+
+      <!-- Item Stuffs -->
+      <div class="grid-container">
+        <section class='checkout-content'>
+          <div class="item_stuff-container">
+            <div class="items_main">
+  
+              <div class="vintage_backpack-container container">
+                <img src="photo1.png" alt="" class="backpack_img img">
+  
+                <div class="item_desc">
+                  <h1 class="item_name">Vintage Backpack</h1>
+                  <p class="price">$54.99 <s class="strikethrough">$94.99</s></p>
+  
+                  <p class="amount"><button class="button_down button">-</button> 1 <button class="button_up button">+</button></p>
+                </div>
+              </div>
+  
+              <div class="levi_shoes-container container">
+                <img src="photo2.png" alt="" class="shoes_img img">
+  
+                <div class="item_desc">
+                  <h1 class="item_name">Levi Shoes</h1>
+                  <p class="price">$74.99<s class="strikethrough">$124.99</s></p>
+  
+                  <p class="amount"><button class="button_down button">-</button> 1 <button class="button_up button">+</button></p>
+                </div>
+              </div>
+  
+              <div class="total_prices-container">
+  
+                <hr>
+                <div class="shipping-container">
+                  <p class="shipping">Shipping</p>
+                  <p class="shipping_price">$19</p>
+                </div>
+  
+                <hr>
+                <div class="total_price-container">
+                  <p class="total">Total</p>
+                  <p class="total_price">$148.99</p>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="forms">
+
+          <div class="contact_info">
+            <h1 class="contact title">Contact Information</h1>
+            <form action="thanks-for-shopping.html">
+              <div class="email-container">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="you@example.com" class="input" required>
+                <i class='bx bx-mail-send'></i>
+              </div>
     
+              <div class="phone-container">
+                <label for="tel">Phone</label>
+                <input type="tel" name="tel" id="tel" placeholder="Enter your number..." class="input" required>
+                <i class='bx bxs-phone' ></i>
+              </div>
+            
+            <div class="contact_info">
+              <h1 class="shipping title">Shipping Address </h1>
+
+                <div class="name-container">
+                  <label for="name">Full Name</label>
+                  <input type="text" name="name" id="name" placeholder="Full Name..." class="input" required>
+                  <i class='bx bxs-user'></i>
+                </div>
+      
+                <div class="address-container">
+                  <label for="address">Home Address</label>
+                  <input type="text" name="home" id="home" placeholder="Enter your home address..." class="input" required>
+                  <i class='bx bxs-home' ></i>
+                </div>
+  
+                <div class="city-container">
+                  <label for="city">City</label>
+                  <input type="text" name="city" id="city" placeholder="Enter your home city..." class="input" required>
+                  <i class='bx bxs-buildings' ></i>
+                </div>
+  
+                <div class="bottom_forms">
+                  <div class="country-container">
+                    <label for="country">Country</label>
+                    <select name="country" id="country" placeholder="Enter your Country..." class="input" required>
+                      <option value="United Kingdom">United Kingdom</option>
+                      <option value="United States">United States</option>
+                      <option value="Norway">Norway</option>
+                    </select>
+                    <i class='bx bxs-buildings' ></i>
+                  </div>
+    
+                  <div class="post-container post">
+                    <label for="post">Post Code</label>
+                    <input type="text" name="post" id="post" placeholder="Post Code..." class="input" required>
+                    <i class='bx bxs-home' ></i>
+                  </div>
+  
+                </div>
+
+                <div class="button-container">
+                  <a href="thanks-for-shopping.html">
+                      <input type="submit" class="submit"> 
+                  </a>
+              </form>
+              
+            </div>
+
+            </div>
+          </div>
+        </section>
+        
+
+
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        <p>Made with <i class='bx bx-heart' ></i> by KJdotIO</p>
+
+      </div>
+    </footer>
   </body>
 </html>
