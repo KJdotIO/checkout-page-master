@@ -97,6 +97,7 @@ main{
     height: 34px;
     background-color: #e4e4e4;
     opacity: 75%;
+    color: #333333;
 }
 .shipping-container{
     display: flex;
@@ -208,6 +209,7 @@ main{
     left: 0px;
     color: rgb(247, 91, 117);
 }
+
 @media (min-width: 1280px) {
     .grid-container{
         display: flex;
